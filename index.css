@@ -1,0 +1,25 @@
+.container {
+    border: 1px solid blue;
+}
+
+
+.home-carousel {
+    border: 3px dashed green;
+}
+
+
+.mission-elements-box {
+    border: 1px solid purple;
+}
+
+.success-stories-box {
+    border: 1px solid magenta;
+}
+
+.press-elements-box {
+    border:1px solid navy;
+}
+
+.footer-element {
+    border: 1px solid orange;
+}
