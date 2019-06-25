@@ -1,7 +1,15 @@
+
+/* General Elements */
+
 .container {
     border: 1px solid blue;
 }
 
+.footer-element {
+    border: 1px solid orange;
+}
+
+/* Main Page */
 
 .home-carousel {
     border: 3px dashed green;
@@ -20,6 +28,14 @@
     border:1px solid navy;
 }
 
-.footer-element {
-    border: 1px solid orange;
+
+
+
+/* About Us Page */
+.history-about-box {
+    border: 1px solid limegreen;
+}
+
+.staff-profile-box {
+    border: 1px solid royalblue;
 }
