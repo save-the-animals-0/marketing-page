@@ -1,0 +1,98 @@
+html {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #F5F5F5;
+  border: 1px solid blue;
+}
+.logo {
+  text-align: center;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  border: 2px solid green;
+  padding: 8px 8px;
+}
+#donate-div {
+  padding: 1%;
+  width: 70%;
+  margin: auto;
+}
+.donate-button {
+  background-color: navy;
+  color: yellow;
+  padding: 8px 40px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  bottom: 10px;
+  right: 15px;
+  opacity: 0.8;
+}
+h4,
+h5 {
+  text-align: center;
+}
+/* General Elements */
+.section-header {
+  width: 90%;
+  margin: 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+.footer-element {
+  border: none;
+  text-align: center;
+  padding: 1rem;
+}
+/* Main Page */
+.home-carousel {
+  border: 3px dashed green;
+}
+.mission-elements-box {
+  border: 1px solid #004FFF;
+  background: #61E786;
+  max-width: 100%;
+  min-height: 100%;
+  padding: 1rem;
+}
+.mission-icon {
+  width: 100%;
+  text-align: center;
+}
+.success-stories-box {
+  border: 1px solid #004FFF;
+  background: #EE8355;
+  max-width: 100%;
+  min-height: 100%;
+  padding: 1rem;
+}
+.press-elements-box {
+  border: 1px solid #004FFF;
+  max-width: 100%;
+  min-height: 100%;
+  text-align: center;
+}
+/* About Us Page */
+.history-about-box {
+  border: 1px solid limegreen;
+}
+.staff-profile-box {
+  border: 1px solid royalblue;
+}
+.hivesVid {
+  display: block;
+  width: 90%;
+  height: 240px;
+  padding: 1rem;
+  margin: 2rem;
+}
+.press-elements-box {
+  border: 1px solid green;
+}
