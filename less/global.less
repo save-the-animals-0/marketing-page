@@ -12,11 +12,16 @@ html {
 };
 
 .container {
-    max-width: 800px;
+    // max-width: 800px;
     width: 100%;
     margin: 0 auto;
     background-color:#F5F5F5;
-    border: 3px solid black;  
+    border: 3px solid black; 
+    
+    @media @desktop
+    {
+        height: 900px;
+    }
   }
 
 
@@ -163,13 +168,13 @@ h4, h5 {text-align: center
 
 .carousel {
     position: relative;
-    height: 400px;
-    width: 800px;
+    height: auto;
+    width: 100%;
     margin:auto;
     padding:10px;
-    @media (max-width: 500px) {
-        width:90%;
-        }     
+    // @media (max-width: 500px) {
+    //     width:90%;
+    //     }     
     }
 
   
@@ -185,43 +190,36 @@ h4, h5 {text-align: center
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 800px;
+    height: auto;
+    width: 100%;
     font-size: 3em;
     color: white;
     line-height: 400px;
     text-align: center;
     opacity: 0;
     transition: opacity 1000ms;
-    @media (max-width: 500px) {
-        width:90%;
-  }
+    }
   
   .slide:nth-child(1) {
     //   background-color: red;
       opacity: 1;
-      @media (max-width: 500px) {
-        width:90%;
-  }
+      }
   
   .slide:nth-child(2) {
     //   background-color: green;
     opacity: 1;
-    @media (max-width: 500px) {
-        width:90%;
+
   }
   
   .slide:nth-child(3) {
     //   background-color: blue;
     opacity: 1;
-    @media (max-width: 500px) {
-        width:90%;
+   
   }
   
   .slide[data-state=active] {
     display: block;
-    @media (max-width: 500px) {
-        width:90%;
+    
   }
   
   .indicators {
