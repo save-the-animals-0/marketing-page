@@ -1,33 +1,56 @@
 html {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Sofia Pro";
 }
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
   background-color: #F5F5F5;
-  border: 1px solid blue;
+  border: 3px solid black;
+}
+.top-of-page {
+  display: flex;
+  justify-content: space-between;
 }
 .logo {
   text-align: center;
+  display: flex;
 }
 .nav {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   border-radius: 8px;
-  border: 2px solid green;
   padding: 8px 8px;
+  font-family: "sofia pro" !important;
+  font-size: 24px;
+  width: 60%;
+}
+.navItem {
+  color: #EE6055;
+}
+.sign-in-button {
+  padding: 8px 40px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  bottom: 10px;
+  right: 15px;
+  opacity: 0.8;
+  background-color: #004FFF;
+  color: limegreen;
 }
 #donate-div {
-  padding: 1%;
+  padding-top: 10rem;
   width: 70%;
   margin: auto;
 }
+.donate-div-icon {
+  width: 10%;
+  padding: 1rem;
+}
 .donate-button {
-  background-color: navy;
-  color: yellow;
+  background-color: limegreen;
+  color: whitesmoke;
   padding: 8px 40px;
   font-size: 1.2rem;
   border-radius: 8px;
@@ -52,19 +75,19 @@ h5 {
   padding: 1rem;
 }
 /* Main Page */
-.home-carousel {
-  border: 3px dashed green;
-}
 .mission-elements-box {
   border: 1px solid #004FFF;
   background: #61E786;
   max-width: 100%;
   min-height: 100%;
   padding: 1rem;
+  border-radius: 8px;
 }
 .mission-icon {
-  width: 100%;
   text-align: center;
+  width: 10%;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 .success-stories-box {
   border: 1px solid #004FFF;
@@ -72,19 +95,14 @@ h5 {
   max-width: 100%;
   min-height: 100%;
   padding: 1rem;
+  border-radius: 8px;
 }
 .press-elements-box {
   border: 1px solid #004FFF;
   max-width: 100%;
   min-height: 100%;
   text-align: center;
-}
-/* About Us Page */
-.history-about-box {
-  border: 1px solid limegreen;
-}
-.staff-profile-box {
-  border: 1px solid royalblue;
+  border-radius: 8px;
 }
 .hivesVid {
   display: block;
@@ -95,4 +113,67 @@ h5 {
 }
 .press-elements-box {
   border: 1px solid green;
+}
+.carousel {
+  position: relative;
+  height: 400px;
+  width: 800px;
+  margin: auto;
+  padding: 10px;
+}
+.slides {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 800px;
+  font-size: 3em;
+  color: white;
+  line-height: 400px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+.slide:nth-child(1) {
+  opacity: 1;
+}
+.slide:nth-child(2) {
+  opacity: 1;
+}
+.slide:nth-child(3) {
+  opacity: 1;
+}
+.slide[data-state=active] {
+  display: block;
+}
+.indicators {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.indicator {
+  cursor: pointer;
+}
+.history-about-box {
+  border: 1px solid #004FFF;
+  background: #EE8355;
+  max-width: 100%;
+  min-height: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid limegreen;
+}
+.staff-profile-box {
+  border: 1px solid #004FFF;
+  background: #61E786;
+  max-width: 100%;
+  min-height: 100%;
+  padding: 2rem 2rem;
+  border-radius: 8px;
+  border: 1px solid royalblue;
 }
