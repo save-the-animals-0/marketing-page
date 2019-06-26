@@ -141,11 +141,13 @@ h4, h5 {
     background-color:@font-accent;
 }
 .hivesVid {
-    display:block;
-    width: 90%;
-    height: 240px;
-    padding: 1rem;
-    margin: 2rem;
+    // display:block;
+    height: auto;
+    // padding: 1rem;
+    // margin: 2rem;
+    video {
+        width:100%;
+    }
 };
    
 
@@ -221,14 +223,24 @@ h4, h5 {
     padding:1rem;
     border-radius: 8px;
     margin:2rem;
-        
+          
 }
 .phonePic {
-    border-radius: 8px;
+    
     text-align: center;
+    .phonePicImg {
+    max-width:350px;
+    max-height:450px ;
+    border-radius: 9px;    
+}
 }
 .historyPic {
     text-align: center;
+  .historyPicImg {
+        max-width: 500px;
+        max-height:250px ;
+        // border-radius: 9px;    
+    }
  }
 .staff-profile-box {
     background:@orangeyred;
@@ -237,8 +249,20 @@ h4, h5 {
     padding:2rem 2rem;
     border-radius: 8px;
     border:1px ridge @accent-color;
+    
 }
 
 .staff-profiles {
     padding:2rem;
+}
+
+.headshot {
+    width: 200px;
+    height:150px; 
+    // border:2px solid black;
+    margin:0 auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }

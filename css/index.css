@@ -122,11 +122,10 @@ h5 {
   background-color: #C0C0C0;
 }
 .hivesVid {
-  display: block;
-  width: 90%;
-  height: 240px;
-  padding: 1rem;
-  margin: 2rem;
+  height: auto;
+}
+.hivesVid video {
+  width: 100%;
 }
 .carousel {
   position: relative;
@@ -188,11 +187,19 @@ h5 {
   margin: 2rem;
 }
 .phonePic {
-  border-radius: 8px;
   text-align: center;
+}
+.phonePic .phonePicImg {
+  max-width: 350px;
+  max-height: 450px ;
+  border-radius: 9px;
 }
 .historyPic {
   text-align: center;
+}
+.historyPic .historyPicImg {
+  max-width: 500px;
+  max-height: 250px ;
 }
 .staff-profile-box {
   background: #EE8355;
@@ -204,4 +211,13 @@ h5 {
 }
 .staff-profiles {
   padding: 2rem;
+}
+.headshot {
+  width: 200px;
+  height: 150px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
