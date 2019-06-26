@@ -55,14 +55,20 @@ color:#EE6055;
     right: 15px;
     opacity: 0.8;
     background-color:@button-color;
-    color:@font-accent;
+    color:@deepblue;
 }
 
 #donate-div {
     padding-top: 10rem;
-    width: 70%;
-    // border: 1px solid lime;
-    margin: auto;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#donate-div-about {
+    margin:0 auto;
+    width:100%;
+    text-align: center;
 }
 
 .donate-div-icon {
@@ -72,7 +78,7 @@ color:#EE6055;
 
 .donate-button {
         background-color:@button-color;
-        color: @font-accent;
+        color: @deepblue;
         padding: 8px 40px;
         font-size: 1.2rem;
         border-radius: 8px;
@@ -93,19 +99,21 @@ h4, h5 {text-align: center
     margin:1rem;
     text-align: center;
     padding:1rem;
+    color:@font-color;
 }
 
 .footer-element {
     border: none;
     text-align: center;
     padding:1rem;
+    color:@orangeyred;
 }
 
 /* Main Page */
 
 
 .mission-elements-box {
-    border: 1px solid #004FFF;
+    border: 1px ridge @background-color;
     background:#61E786;
     max-width: 100%;
     min-height: 100%;
@@ -122,8 +130,8 @@ h4, h5 {text-align: center
     }
 
 .success-stories-box {
-    border: 1px solid #004FFF;
-    background: #EE8355;
+    border: 1px ridge @background-color;
+    background: @seafoamgreen;
     max-width: 100%;
     min-height: 100%;
     padding:1rem;
@@ -148,7 +156,10 @@ h4, h5 {text-align: center
 
 .press-elements-box {
     border:1px solid green;
+    background-color:@font-accent;
 }
+
+
 
 .carousel {
     position: relative;
@@ -156,12 +167,18 @@ h4, h5 {text-align: center
     width: 800px;
     margin:auto;
     padding:10px;
-  }
+    @media (max-width: 500px) {
+        width:90%;
+        }     
+    }
+
   
   .slides {
     height: 100%;
     width: 100%;
     position: relative;
+    @media (max-width: 500px) {
+        width:90%;
   }
   
   .slide {
@@ -176,25 +193,35 @@ h4, h5 {text-align: center
     text-align: center;
     opacity: 0;
     transition: opacity 1000ms;
+    @media (max-width: 500px) {
+        width:90%;
   }
   
   .slide:nth-child(1) {
     //   background-color: red;
       opacity: 1;
+      @media (max-width: 500px) {
+        width:90%;
   }
   
   .slide:nth-child(2) {
     //   background-color: green;
     opacity: 1;
+    @media (max-width: 500px) {
+        width:90%;
   }
   
   .slide:nth-child(3) {
     //   background-color: blue;
     opacity: 1;
+    @media (max-width: 500px) {
+        width:90%;
   }
   
   .slide[data-state=active] {
     display: block;
+    @media (max-width: 500px) {
+        width:90%;
   }
   
   .indicators {
@@ -210,23 +237,40 @@ h4, h5 {text-align: center
 
 //   About Us 
 
+.historyAndAboutOrg {
+    display:flex;
+    flex-direction: column;
+    align-content: space-between;
+}
 .history-about-box {
-    border: 1px solid #004FFF;
+    border: 1px ridge @accent-color;
     background: #EE8355;
     max-width: 100%;
     min-height: 100%;
     padding:1rem;
     border-radius: 8px;
-    border: 1px solid limegreen;
+    margin:2rem;
+        
 }
 
+.phonePic {
+    border-radius: 8px;
+    text-align: center;
+
+}
+.historyPic {
+    text-align: center;
+ }
 
 .staff-profile-box {
-    border: 1px solid #004FFF;
-    background:#61E786;
+    background:@orangeyred;
     max-width: 100%;
     min-height: 100%;
     padding:2rem 2rem;
     border-radius: 8px;
-    border: 1px solid royalblue;
+    border:1px ridge @accent-color;
+}
+
+.staff-profiles {
+    padding:2rem;
 }

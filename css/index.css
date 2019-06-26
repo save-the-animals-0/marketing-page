@@ -36,21 +36,27 @@ html {
   bottom: 10px;
   right: 15px;
   opacity: 0.8;
-  background-color: #004FFF;
-  color: limegreen;
+  background-color: #61E786;
+  color: #004FFF;
 }
 #donate-div {
   padding-top: 10rem;
-  width: 70%;
-  margin: auto;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+#donate-div-about {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
 }
 .donate-div-icon {
   width: 10%;
   padding: 1rem;
 }
 .donate-button {
-  background-color: limegreen;
-  color: whitesmoke;
+  background-color: #61E786;
+  color: #004FFF;
   padding: 8px 40px;
   font-size: 1.2rem;
   border-radius: 8px;
@@ -68,15 +74,17 @@ h5 {
   margin: 1rem;
   text-align: center;
   padding: 1rem;
+  color: black;
 }
 .footer-element {
   border: none;
   text-align: center;
   padding: 1rem;
+  color: #EE8355;
 }
 /* Main Page */
 .mission-elements-box {
-  border: 1px solid #004FFF;
+  border: 1px ridge #EE8355;
   background: #61E786;
   max-width: 100%;
   min-height: 100%;
@@ -90,8 +98,8 @@ h5 {
   margin-right: 3rem;
 }
 .success-stories-box {
-  border: 1px solid #004FFF;
-  background: #EE8355;
+  border: 1px ridge #EE8355;
+  background: #61E786;
   max-width: 100%;
   min-height: 100%;
   padding: 1rem;
@@ -113,6 +121,7 @@ h5 {
 }
 .press-elements-box {
   border: 1px solid green;
+  background-color: #C0C0C0;
 }
 .carousel {
   position: relative;
@@ -120,6 +129,11 @@ h5 {
   width: 800px;
   margin: auto;
   padding: 10px;
+}
+@media (max-width: 500px) {
+  .carousel {
+    width: 90%;
+  }
 }
 .slides {
   height: 100%;
@@ -159,21 +173,35 @@ h5 {
 .indicator {
   cursor: pointer;
 }
+.historyAndAboutOrg {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
 .history-about-box {
-  border: 1px solid #004FFF;
+  border: 1px ridge #004FFF;
   background: #EE8355;
   max-width: 100%;
   min-height: 100%;
   padding: 1rem;
   border-radius: 8px;
-  border: 1px solid limegreen;
+  margin: 2rem;
+}
+.phonePic {
+  border-radius: 8px;
+  text-align: center;
+}
+.historyPic {
+  text-align: center;
 }
 .staff-profile-box {
-  border: 1px solid #004FFF;
-  background: #61E786;
+  background: #EE8355;
   max-width: 100%;
   min-height: 100%;
   padding: 2rem 2rem;
   border-radius: 8px;
-  border: 1px solid royalblue;
+  border: 1px ridge #004FFF;
+}
+.staff-profiles {
+  padding: 2rem;
 }
