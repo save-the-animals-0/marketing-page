@@ -139,3 +139,8 @@ if (carousel) {
         indicators[i].addEventListener("click", setSlide(i));
     }
 }
+
+
+document.querySelector(".donate-button").addEventListener("click", function() {
+  alert("Please Sign In to Complete Your Giving");
+});
