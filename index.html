@@ -8,8 +8,8 @@
  
     <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -27,7 +27,7 @@
     <div class="nav">
       <a class="navItem navLink active" href="index.html">Home </a>
       <a class="navItem navLink" href="about_us.html">About Us</a>
-      <a class="navItem navLink" href="#">Our App</a>
+      <a class="navItem navLink" href="#">Get App</a>
 
 
       <form class="form-inline">
@@ -67,7 +67,7 @@
         <img src="img\noun_Elephant Body_1591847.svg" class="donate-div-icon"> </img>
         <img src="img\noun_Fish_2642475.svg" class="donate-div-icon"> </img>
 
-        <button class="donate-button">
+        <button data-tippy-content='<strong>Please sign in to give.</strong>'class="donate-button">
           <div> DONATE </div>
         </button>
         <img src="img\noun_Fish_2642475.svg" class="donate-div-icon"></img>
@@ -78,21 +78,18 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
     <div class="section-header" id="mission"> <h4>OUR MISSION</h4></div>
 
-    <div class="row mission-elements">
+    <div class="row mission-elements1">
 
-      <div id="mission-box-1">
+        <div class="w3-bar w3-black" id="hideMeOnDesktop">
+            <button class="w3-bar-item w3-button" onclick="openCity('mission-box-1')">Global</button>
+            <button class="w3-bar-item w3-button" onclick="openCity('mission-box-2')">Local</button>
+            <button class="w3-bar-item w3-button" onclick="openCity('mission-box-3')">Driven</button>
+            <button class="w3-bar-item w3-button" onclick="openCity('mission-box-4')">Fiscal</button>
+          </div>
+
+      <div id="mission-box-1" class="w3-container city">
         <div class="mission-elements-box">
 
           <div>
@@ -112,7 +109,7 @@
         </div>
       </div>
 
-      <div id="mission-box-2" >
+      <div id="mission-box-2" class="w3-container city" style="display:none">
         <div class="mission-elements-box">
 
           <div>
@@ -132,7 +129,7 @@
         </div>
       </div>
 
-      <div id="mission-box-3" >
+      <div id="mission-box-3" class="w3-container city" style="display:none">
         <div class="mission-elements-box">
 
           <div>
@@ -152,7 +149,7 @@
         </div>
       </div>
 
-      <div id="mission-box-4">
+      <div id="mission-box-4" class="w3-container city" style="display:none" >
         <div class="mission-elements-box">
 
           <div>
@@ -173,6 +170,131 @@
       </div>
 
     </div>
+
+
+
+    <div class="row mission-elements">
+        
+
+      <div id="mission-box-1tabdesk">
+        <div class="mission-elements-box">
+
+          <div>
+            <h4>Global<br> Change </h4>
+          </div>
+
+          <div class="mission-icon">
+            <img src="img\noun_Global connections_1280783.svg" ></img>
+          </div>
+
+          <div>
+            <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach
+              avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin
+              horseradish spinach carrot soko. </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="mission-box-2tabdesk">
+        <div class="mission-elements-box">
+
+          <div>
+            <h4>Local<br> Impact</h4>
+          </div>
+
+          <div class="mission-icon">
+            <img src="img\noun_local_1709298.svg" ></img>
+          </div>
+
+          <div>
+            <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach
+              avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin
+              horseradish spinach carrot soko. </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="mission-box-3tabdesk">
+        <div class="mission-elements-box">
+
+          <div>
+            <h4>Community<br> Driven </h4>
+          </div>
+
+          <div class="mission-icon">
+            <img src="img\noun_Community_1289689.svg" ></img>
+          </div>
+
+          <div>
+            <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach
+              avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin
+              horseradish spinach carrot soko. </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="mission-box-4tabdesk"  >
+        <div class="mission-elements-box">
+
+          <div>
+            <h4> Fiscal<br> Planning </h4>
+          </div>
+
+          <div class="mission-icon">
+            <img src="img\noun_financial_1684306.svg" ></img>
+          </div>
+
+          <div>
+            <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach
+              avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin
+              horseradish spinach carrot soko. </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <div class="section-header" id="success"> <h4>SUCCESS STORIES</h4></div>
@@ -275,6 +397,19 @@
   <!--//end container//-->
 
   <!-- Optional JavaScript -->
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@4"></script>
+  <script>
+      tippy('.donate-button', {
+      trigger: 'click',
+      arrow: true,
+  arrowType: 'round', // or 'sharp' (default)
+  // animation: 'fade',
+  animateFill: false,
+  animation: 'scale',
+  theme: 'dark',
+  });
+    </script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

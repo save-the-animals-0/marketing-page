@@ -132,17 +132,33 @@ h5 {
 }
 /* Main Page */
 
+
 .mission-elements {
+    justify-content: space-around;
+    @media @tablet {
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+    }
+    @media @mobile {
+      display:none;
+    }
+  }
+  
+
+
+.mission-elements1 {
   justify-content: space-around;
   @media @tablet {
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
+   display:none;
   }
   @media @mobile {
     text-align: center;
   }
 }
+
+
+
 
 .row {
 
@@ -202,22 +218,86 @@ h5 {
 
 #mission-box-1 {
     margin-bottom: 1rem;
+    @media @tablet {
+     display: none;
+    }
+    @media @desktop {
+        display: none;
+    }
 }
 
 #mission-box-2 {
     margin-bottom: 1rem;
+    @media @tablet {
+        display: none;
+       }
+       @media @desktop {
+           display: none;
+       }
 }
 
 #mission-box-3 {
  @media @mobile {
     margin-bottom: 1rem;
 }
+@media @tablet {
+    display: none;
+   }
+   @media @desktop {
+       display: none;
+   }
 }
 
 #mission-box-4 {
     @media @mobile{
     margin-bottom: 1rem;
 }
+@media @tablet {
+    display: none;
+   }
+   @media @desktop {
+       display: none;
+   }
+}
+
+
+#hideMeOnDesktop {
+    @media @tablet {
+        visibility: hidden;
+    }
+    @media @desktop {
+        visibility: hidden;
+    }
+}
+
+.w3-bar-item .w3-button {
+    display:none;
+}
+
+#mission-box-1tabdesk {
+    margin-bottom: 1rem;
+    @media @mobile {
+        display:none;
+      }
+}
+
+#mission-box-2tabdesk {
+    margin-bottom: 1rem;
+@media @mobile {
+    display:none;
+  }
+}
+
+#mission-box-3tabdesk {
+    
+@media @mobile {
+    display:none;
+  }
+}
+#mission-box-4tabdesk {
+    @media @mobile {
+        display:none;
+      }
 }
 
 // .success-stories{
@@ -394,6 +474,21 @@ h5 {
   padding: 1rem;
   border-radius: 8px;
   margin: 2rem;
+@media @mobile {
+margin:auto;
+}
+}
+
+#history-of-org {
+    @media @mobile {
+        padding-bottom:3px;
+    }
+}
+
+#about-app {
+    @media @mobile {
+        padding-bottom:6px;
+    }
 }
 .phonePic {
   text-align: center;
@@ -401,7 +496,10 @@ h5 {
     max-width: 350px;
     max-height: 450px;
     border-radius: 9px;
+  @media @mobile {
+      display:none;
   }
+}
 }
 .historyPic {
   text-align: center;
@@ -424,8 +522,51 @@ h5 {
 }
 
 .staff-profiles {
-  padding: 2rem;
+  padding: 1rem;
 }
+
+.staff-profiles {
+ @media @mobile {
+      padding-top:0;
+      padding-bottom:3px;    
+  }
+  }
+  
+
+#staff-profile-1 {
+@media @tablet {
+padding:1rem;
+}
+@media @mobile {
+    padding:6px;    
+}
+}
+
+#staff-profile-2 {
+    @media @tablet {
+    padding:1rem;
+    }    
+    @media @mobile {
+        padding:6px;
+
+    }
+    }
+
+#staff-profile-3 {
+    @media @mobile {
+    padding-top:0px;    
+    padding-right:6px;    
+    padding-bottom:6px;    
+    padding-left:6px;    
+
+}
+    }
+
+    #staff-profile-4 {
+        @media @mobile {
+        padding:6px;    
+            }
+        }
 
 .headshot {
   width: 200px;
@@ -437,3 +578,84 @@ h5 {
   background-position: center;
   background-size: cover;
 }
+
+.shout {
+    justify-content: center;
+    text-align: center;
+    font-size:1.5rem;
+}
+
+.team-names
+{
+    color:@accent-color;
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    padding:2em;
+}
+
+// Webteam
+
+.myButton {
+    padding: 8px 40px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    bottom: 10px;
+    right: 15px;
+    opacity: 0.8;
+    background-color: @button-color;
+    color: @deepblue;
+    font-family: "Sofia Pro", "Roboto";
+  }
+
+  .photoCreds {
+      @media @tablet {
+          display:flex;
+          width:95%;
+          justify-content: center;
+      }
+      @media @mobile {
+          justify-content: center;
+          text-align: center;
+      }
+  }
+
+
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

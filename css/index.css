@@ -153,6 +153,19 @@ h5 {
 }
 @media (max-width: 500px)  and (min-width: 300px) {
   .mission-elements {
+    display: none;
+  }
+}
+.mission-elements1 {
+  justify-content: space-around;
+}
+@media (max-width:800px)  and (min-width: 501px) {
+  .mission-elements1 {
+    display: none;
+  }
+}
+@media (max-width: 500px)  and (min-width: 300px) {
+  .mission-elements1 {
     text-align: center;
   }
 }
@@ -219,17 +232,96 @@ h5 {
 #mission-box-1 {
   margin-bottom: 1rem;
 }
+@media (max-width:800px)  and (min-width: 501px) {
+  #mission-box-1 {
+    display: none;
+  }
+}
+@media (min-width:801px) {
+  #mission-box-1 {
+    display: none;
+  }
+}
 #mission-box-2 {
   margin-bottom: 1rem;
+}
+@media (max-width:800px)  and (min-width: 501px) {
+  #mission-box-2 {
+    display: none;
+  }
+}
+@media (min-width:801px) {
+  #mission-box-2 {
+    display: none;
+  }
 }
 @media (max-width: 500px)  and (min-width: 300px) {
   #mission-box-3 {
     margin-bottom: 1rem;
   }
 }
+@media (max-width:800px)  and (min-width: 501px) {
+  #mission-box-3 {
+    display: none;
+  }
+}
+@media (min-width:801px) {
+  #mission-box-3 {
+    display: none;
+  }
+}
 @media (max-width: 500px)  and (min-width: 300px) {
   #mission-box-4 {
     margin-bottom: 1rem;
+  }
+}
+@media (max-width:800px)  and (min-width: 501px) {
+  #mission-box-4 {
+    display: none;
+  }
+}
+@media (min-width:801px) {
+  #mission-box-4 {
+    display: none;
+  }
+}
+@media (max-width:800px)  and (min-width: 501px) {
+  #hideMeOnDesktop {
+    visibility: hidden;
+  }
+}
+@media (min-width:801px) {
+  #hideMeOnDesktop {
+    visibility: hidden;
+  }
+}
+.w3-bar-item .w3-button {
+  display: none;
+}
+#mission-box-1tabdesk {
+  margin-bottom: 1rem;
+}
+@media (max-width: 500px)  and (min-width: 300px) {
+  #mission-box-1tabdesk {
+    display: none;
+  }
+}
+#mission-box-2tabdesk {
+  margin-bottom: 1rem;
+}
+@media (max-width: 500px)  and (min-width: 300px) {
+  #mission-box-2tabdesk {
+    display: none;
+  }
+}
+@media (max-width: 500px)  and (min-width: 300px) {
+  #mission-box-3tabdesk {
+    display: none;
+  }
+}
+@media (max-width: 500px)  and (min-width: 300px) {
+  #mission-box-4tabdesk {
+    display: none;
   }
 }
 .success-stories-box {
@@ -414,6 +506,21 @@ h5 {
   border-radius: 8px;
   margin: 2rem;
 }
+@media (max-width: 500px)  and (min-width: 300px) {
+  .history-about-box {
+    margin: auto;
+  }
+}
+@media (max-width: 500px)  and (min-width: 300px) {
+  #history-of-org {
+    padding-bottom: 3px;
+  }
+}
+@media (max-width: 500px)  and (min-width: 300px) {
+  #about-app {
+    padding-bottom: 6px;
+  }
+}
 .phonePic {
   text-align: center;
 }
@@ -421,6 +528,11 @@ h5 {
   max-width: 350px;
   max-height: 450px;
   border-radius: 9px;
+}
+@media (max-width: 500px)  and (min-width: 300px) {
+  .phonePic .phonePicImg {
+    display: none;
+  }
 }
 .historyPic {
   text-align: center;
@@ -443,7 +555,46 @@ h5 {
   border: 1px ridge #004FFF;
 }
 .staff-profiles {
-  padding: 2rem;
+  padding: 1rem;
+}
+@media (max-width: 500px)  and (min-width: 300px) {
+  .staff-profiles {
+    padding-top: 0;
+    padding-bottom: 3px;
+  }
+}
+@media (max-width:800px)  and (min-width: 501px) {
+  #staff-profile-1 {
+    padding: 1rem;
+  }
+}
+@media (max-width: 500px)  and (min-width: 300px) {
+  #staff-profile-1 {
+    padding: 6px;
+  }
+}
+@media (max-width:800px)  and (min-width: 501px) {
+  #staff-profile-2 {
+    padding: 1rem;
+  }
+}
+@media (max-width: 500px)  and (min-width: 300px) {
+  #staff-profile-2 {
+    padding: 6px;
+  }
+}
+@media (max-width: 500px)  and (min-width: 300px) {
+  #staff-profile-3 {
+    padding-top: 0px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+  }
+}
+@media (max-width: 500px)  and (min-width: 300px) {
+  #staff-profile-4 {
+    padding: 6px;
+  }
 }
 .headshot {
   width: 200px;
@@ -453,4 +604,84 @@ h5 {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+}
+.shout {
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.team-names {
+  color: #004FFF;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 2em;
+}
+.myButton {
+  padding: 8px 40px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  bottom: 10px;
+  right: 15px;
+  opacity: 0.8;
+  background-color: #61E786;
+  color: #004FFF;
+  font-family: "Sofia Pro", "Roboto";
+}
+@media (max-width:800px)  and (min-width: 501px) {
+  .photoCreds {
+    display: flex;
+    width: 95%;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px)  and (min-width: 300px) {
+  .photoCreds {
+    justify-content: center;
+    text-align: center;
+  }
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #000000;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
