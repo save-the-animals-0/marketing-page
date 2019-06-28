@@ -128,8 +128,8 @@ h5 {
 }
 /* General Elements */
 .section-header {
-  width: 90%;
-  margin: 1rem;
+  width: 100%;
+  margin: auto;
   text-align: center;
   padding: 1rem;
   color: black;
@@ -207,8 +207,20 @@ h5 {
     margin: 5px auto;
   }
 }
-.row .mission-elements-box img {
-  width: 15%;
+@media (max-width: 500px)  and (min-width: 300px) {
+  .row .mission-elements-box img {
+    width: 15%;
+  }
+}
+@media (max-width:800px)  and (min-width: 501px) {
+  .row .mission-elements-box img {
+    width: 15%;
+  }
+}
+@media (min-width:801px) {
+  .row .mission-elements-box img {
+    width: 25%;
+  }
 }
 .mission-icon {
   text-align: center;
@@ -314,10 +326,16 @@ h5 {
     display: none;
   }
 }
+#mission-box-3tabdesk {
+  margin-bottom: 1rem;
+}
 @media (max-width: 500px)  and (min-width: 300px) {
   #mission-box-3tabdesk {
     display: none;
   }
+}
+#mission-box-4tabdesk {
+  margin-bottom: 1rem;
 }
 @media (max-width: 500px)  and (min-width: 300px) {
   #mission-box-4tabdesk {
@@ -641,47 +659,94 @@ h5 {
     text-align: center;
   }
 }
-/* The Modal (background) */
-.modal {
+@media (max-width: 500px)  and (min-width: 300px) {
+  .team-names {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+#xanderBio {
+  background-color: lightgrey;
+  padding: 2px;
   display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: #000000;
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
+  border: #61E786;
 }
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  /* Could be more or less, depending on screen size */
+@media (max-width: 500px)  and (min-width: 300px) {
+  #xanderBio {
+    padding: 6px;
+  }
 }
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+#xanderID:hover + div {
+  display: block;
 }
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+#lavonBio {
+  background-color: lightgrey;
+  padding: 2px;
+  display: none;
+  border: #61E786;
+}
+@media (max-width: 500px)  and (min-width: 300px) {
+  #lavonBio {
+    padding: 6px;
+  }
+}
+#lavonID:hover + div {
+  display: block;
+}
+#seanBio {
+  background-color: lightgrey;
+  padding: 2px;
+  display: none;
+  border: #61E786;
+}
+@media (max-width: 500px)  and (min-width: 300px) {
+  #seanBio {
+    padding: 6px;
+  }
+}
+#seanID:hover + div {
+  display: block;
+}
+#mimiBio {
+  background-color: lightgrey;
+  padding: 2px;
+  display: none;
+  border: #61E786;
+}
+@media (max-width: 500px)  and (min-width: 300px) {
+  #mimiBio {
+    padding: 6px;
+  }
+}
+#mimiID:hover + div {
+  display: block;
+}
+#alyssaID:hover + div {
+  display: block;
+}
+#alyssaBio {
+  background-color: lightgrey;
+  padding: 2px;
+  display: none;
+  border: #61E786;
+}
+@media (max-width: 500px)  and (min-width: 300px) {
+  #alyssaBio {
+    padding: 6px;
+  }
+}
+#blayrID:hover + div {
+  display: block;
+}
+#blayrBio {
+  background-color: lightgrey;
+  padding: 2px;
+  display: none;
+  border: #61E786;
+}
+@media (max-width: 500px)  and (min-width: 300px) {
+  #blayrBio {
+    padding: 6px;
+  }
 }
