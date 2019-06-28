@@ -5,10 +5,10 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/index.css">
-
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -23,18 +23,22 @@
 
   <div class="container">
 
-    <img src="img\key_logo_gif_resize.gif" alt="KEY CONSERVATION LOGO img" class="logo"></img>
+    <div class="top-of-page">
+      <img src="img\key_logo_gif_resize.gif" alt="KEY CONSERVATION LOGO img" class="logo"></img>
 
-    <div class="nav">
-      <a class="navItem navLink active" href="index.html">Home </a>
-      <a class="navItem navLink" href="about_us.html">About Us</a>
-      <a class="navItem navLink" href="#">Our App</a>
+      <div class="nav">
+        <a class="navItem navLink active" href="index.html">Home </a>
+        <a class="navItem navLink" href="about_us.html">About Us</a>
+        <a class="navItem navLink" href="#">Get App</a>
 
 
-      <form class="form-inline">
-        <button class="sign-in-button" type="button">Sign In</button>
-      </form>
+        <form class="form-inline">
+          <button class="sign-in-button" type="button">Sign In</button>
+        </form>
+      </div>
     </div>
+
+
 
     <div class="section-header" id="historyAndAbout">
       <h2>About Us</h2>
@@ -46,17 +50,18 @@
         <div class="history-about-box">
 
           <div>
-            <h3>Our History </h3>
+            <h3>How it all started... </h3>
+          </div>
+
+          <div class="historyPic">
+
+            <img src="img\stefan-vladimirov-vh-KV3MSubo-unsplash.jpg" class="historyPicImg">
           </div>
 
           <div>
-            <h6>history relevant img</h6>
-          </div>
-
-          <div>
-            <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery
-              bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash
-              brussels sprout chard. </p>
+            <p>The conservation movement had an important effect on government policy in the United States. Many laws
+              were passed, including those that established national parks, national forests, and policies for
+              protecting fish and wildlife throughout the nation. </p>
           </div>
 
         </div>
@@ -67,35 +72,35 @@
         <div class="history-about-box">
 
           <div>
-            <h3>About Our App </h3>
+            <h3>Our Revolutionary New iOS App </h3>
+          </div>
+
+          <div class="phonePic">
+            <img src="img\Campaign Detail View - Supporter.png" class="phonePicImg">
           </div>
 
           <div>
-            <h6>app relevant img</h6>
-          </div>
-
-          <div>
-            <p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach
-              arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts
-              fava bean. Dandelion zucchini burdock. </p>
+            <p>We are pleased to announce that the official app for KEY CONSERVATION campaigns has launched. Now
+              available in the iOS apps store. Key features include accounts for both or organization partners to create
+              campaigns including urgency levels. </p>
           </div>
 
         </div>
       </div>
     </div>
 
-    <div class="row" id="donate-div">
+    <div class="row" id="donate-div-about">
       <div class="col">
-        <img src="img\noun_Penguin_1110100.png" class="donate-div-icon"> </img>
-        <img src="img\noun_Penguin_1110100.png" class="donate-div-icon"> </img>
-        <img src="img\noun_Penguin_1110100.png" class="donate-div-icon"> </img>
+        <img src="img\noun_Penguin_543593.svg" class="donate-div-icon"> </img>
+        <img src="img\noun_Elephant Body_1591847.svg" class="donate-div-icon"> </img>
+        <img src="img\noun_Fish_2642475.svg" class="donate-div-icon"> </img>
 
-        <button class="donate-button">
+        <button data-tippy-content='<strong>Please sign in to give.</strong>'class="donate-button">
           <div> DONATE </div>
         </button>
-        <img src="img\noun_Penguin_1110100.png" class="donate-div-icon"></img>
-        <img src="img\noun_Penguin_1110100.png" class="donate-div-icon"></img>
-        <img src="img\noun_Penguin_1110100.png" class="donate-div-icon"></img>
+        <img src="img\noun_Fish_2642475.svg" class="donate-div-icon"></img>
+        <img src="img\noun_Elephant Body_1591847.svg" class="donate-div-icon"></img>
+        <img src="img\noun_Penguin_543593.svg" class="donate-div-icon"></img>
 
       </div>
     </div>
@@ -106,21 +111,24 @@
 
     <div class="row staff-profiles">
 
+
       <div id="staff-profile-1" class="col">
         <div class="staff-profile-box">
 
           <div>
-            <h3>Name, Role </h3>
+            <h3>Audrey Belle Mejia<br> Founder </h3>
           </div>
 
-          <div>
-            <h6>staff headshot img 1</h6>
+
+          <div class="headshot">
+            <img src="img\jimmy-chang-VplzfrQvCm4-unsplash.jpg">
           </div>
 
+
           <div>
-            <p>Sea lettuce gumbo grape kale kombu cauliflower salsify kohlrabi okra sea lettuce broccoli celery lotus
-              root carrot winter purslane turnip greens garlic. Jícama garlic courgette coriander radicchio plantain
-              scallion cauliflower fava bean desert raisin spring onion chicory bunya nuts. </p>
+            <p> She oversees the administration, fundraising and management of field conservation programs . She is a
+              member of the IUCN Conservation Breeding, Penguin, African Rhino, and Asian Rhino
+              Specialist Groups and is the Purple List for the Unicorn Society. </p>
           </div>
 
         </div>
@@ -131,17 +139,17 @@
         <div class="staff-profile-box">
 
           <div>
-            <h3>Name, Role </h3>
+            <h3>Zoe Mejia<br> Chief of Partnerships </h3>
+          </div>
+
+          <div class="headshot">
+            <img src="img\aboutImgs\derek-torsani-4ng2Q432boo-unsplash.jpg">
           </div>
 
           <div>
-            <h6>staff headshot img 2</h6>
-          </div>
-
-          <div>
-            <p>Sea lettuce gumbo grape kale kombu cauliflower salsify kohlrabi okra sea lettuce broccoli celery lotus
-              root carrot winter purslane turnip greens garlic. Jícama garlic courgette coriander radicchio plantain
-              scallion cauliflower fava bean desert raisin spring onion chicory bunya nuts. </p>
+            <p>With a background in behavior analysis, Stacy has been a zookeeper for 10+ years and has trained and
+              taken care of many rhinos in that time. She is currently completing her Masters in Environmental Law and
+              Policy and has been assisting with IRF's digital marketing and communications since June 2018. </p>
           </div>
 
         </div>
@@ -155,44 +163,77 @@
         <div class="staff-profile-box">
 
           <div>
-            <h3>Name, Role </h3>
+            <h3>Teresa Ramona <br> Head of Publicity </h3>
+          </div>
+
+          <div class="headshot">
+            <img src="img\aboutImgs\hichem-dahmani-9VcFGAlf1lc-unsplash.jpg">
           </div>
 
           <div>
-            <h6>staff headshot img 3</h6>
-          </div>
-
-          <div>
-            <p>Sea lettuce gumbo grape kale kombu cauliflower salsify kohlrabi okra sea lettuce broccoli celery lotus
-              root carrot winter purslane turnip greens garlic. Jícama garlic courgette coriander radicchio plantain
-              scallion cauliflower fava bean desert raisin spring onion chicory bunya nuts. </p>
+            <p>She has over 15 years experience in non-profit digital marketing and communications and previously worked
+              for organizations such as the Houston Zoo, IUCN Tapir Specialist Group and the Houston Museum of Natural
+              Science. </p>
           </div>
 
         </div>
       </div>
 
 
-      <div id="staff-profile-2" class="col">
+      <div id="staff-profile-4" class="col">
         <div class="staff-profile-box">
 
           <div>
-            <h3>Name, Role </h3>
+            <h3>Rafael Antonio<br> Director of Initiatives </h3>
           </div>
 
-          <div>
-            <h6>staff headshot img 4</h6>
+          <div class="headshot">
+            <img src="img\aboutImgs\elizeu-dias-rlk6VkHZkns-unsplash.jpg">
           </div>
 
+
           <div>
-            <p>Sea lettuce gumbo grape kale kombu cauliflower salsify kohlrabi okra sea lettuce broccoli celery lotus
-              root carrot winter purslane turnip greens garlic. Jícama garlic courgette coriander radicchio plantain
-              scallion cauliflower fava bean desert raisin spring onion chicory bunya nuts. </p>
+            <p>Rafael has nearly twenty years of experience in fundraising and project management with international NGOs. </p>
           </div>
 
         </div>
       </div>
 
     </div>
+
+
+    <div class=creative-team-div>
+      <div class="shout">shout out to our team of creative consultants</div>
+
+
+      <div class="team-names">
+
+        <span id="xanderID">xander</span>
+        <div id="xanderBio" >Art + Code.</div>
+      
+
+        <span id="lavonID">lavon</span>
+        <div id="xanderBio">Loves penguins & pixels.</div>
+
+        <span id="seanID">sean</span>
+        <div id="seanBio">Avid karaoker, mediocre skier, and thinks that Jack and Rose totally could have fit on that door.</div>
+
+        <span id="mimiID">mimi</span>
+        <div id="mimiBio">Obsessed with Dan Levy’s green screen cats and traveling.</div>
+
+        <span id="alyssaID">alyssa</span>
+        <div id="alyssaBio">I rescue dogs for a living and code things.</div>
+
+        <span id="blayrID">blayr</span>
+        <div id="blayrBio">Front-End master.</div>
+      
+      </div>
+    </div>
+
+
+
+
+
 
 
 
@@ -207,13 +248,17 @@
 
 
 
-    Photo Credits:
+
+
+<div class="photoCreds">
+    Wildlife Photo Credits: <br>
     <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
       href="https://unsplash.com/@wwwynand?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
       target="_blank" rel="noopener noreferrer"
       title="Download free do whatever you want high-resolution photos from Wynand van Poortvliet"><span
         style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
-          style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32">
+          style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+          viewBox="0 0 32 32">
           <title>unsplash-logo</title>
           <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
         </svg></span><span style="display:inline-block;padding:2px 3px">Wynand van Poortvliet</span></a>
@@ -222,7 +267,8 @@
       target="_blank" rel="noopener noreferrer"
       title="Download free do whatever you want high-resolution photos from Wexor Tmg"><span
         style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
-          style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32">
+          style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+          viewBox="0 0 32 32">
           <title>unsplash-logo</title>
           <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
         </svg></span><span style="display:inline-block;padding:2px 3px">Wexor Tmg</span></a>
@@ -231,11 +277,34 @@
       target="_blank" rel="noopener noreferrer"
       title="Download free do whatever you want high-resolution photos from Gary Bendig"><span
         style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
-          style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32">
+          style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+          viewBox="0 0 32 32">
           <title>unsplash-logo</title>
           <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
         </svg></span><span style="display:inline-block;padding:2px 3px">Gary Bendig</span></a>
-        
+    <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+      href="https://unsplash.com/@vladington?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+      target="_blank" rel="noopener noreferrer"
+      title="Download free do whatever you want high-resolution photos from Stefan Vladimirov"><span
+        style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+          style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+          viewBox="0 0 32 32">
+          <title>unsplash-logo</title>
+          <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+        </svg></span><span style="display:inline-block;padding:2px 3px">Stefan Vladimirov</span></a>
+
+    <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+      href="https://unsplash.com/@thomaskinto?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+      target="_blank" rel="noopener noreferrer"
+      title="Download free do whatever you want high-resolution photos from Thomas Kinto"><span
+        style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+          style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+          viewBox="0 0 32 32">
+          <title>unsplash-logo</title>
+          <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+        </svg></span><span style="display:inline-block;padding:2px 3px">Thomas Kinto</span></a>
+        </div>
+
   </div> <!-- container closing div -->
 
 
@@ -243,6 +312,22 @@
 
 
   <!-- Optional JavaScript -->
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@4"></script>
+  <script>
+      tippy('.donate-button', {
+      trigger: 'click',
+      arrow: true,
+  arrowType: 'round', // or 'sharp' (default)
+  // animation: 'fade',
+  animateFill: false,
+  animation: 'scale',
+  theme: 'dark',
+  });
+    </script>
+  <!-- <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@4"></script> -->
+
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -253,16 +338,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
-
-<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
-  href="https://unsplash.com/@thomaskinto?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
-  target="_blank" rel="noopener noreferrer"
-  title="Download free do whatever you want high-resolution photos from Thomas Kinto"><span
-    style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
-      style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32">
-      <title>unsplash-logo</title>
-      <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
-    </svg></span><span style="display:inline-block;padding:2px 3px">Thomas Kinto</span></a>

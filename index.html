@@ -5,10 +5,10 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- 
-    <link rel="stylesheet" href="css/index.css">
-    
-    
+
+  <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -21,26 +21,38 @@
   <div class="container">
     <!-- Content here -->
 
+    <div class="top-of-page">
+      <img src="img\key_logo_gif_resize.gif" alt="KEY CONSERVATION LOGO img" class="logo"></img>
 
-    <img src="img\key_logo_gif_resize.gif" alt="KEY CONSERVATION LOGO img" class="logo"></img>
-
-    <div class="nav">
-      <a class="navItem navLink active" href="index.html">Home </a>
-      <a class="navItem navLink" href="about_us.html">About Us</a>
-      <a class="navItem navLink" href="#">Our App</a>
+      <div class="nav">
+        <a class="navItem navLink active" href="index.html">Home </a>
+        <a class="navItem navLink" href="about_us.html">About Us</a>
+        <a class="navItem navLink" href="#">Get App</a>
 
 
-      <form class="form-inline">
-        <button class="sign-in-button" type="button">Sign In</button>
-      </form>
+        <form class="form-inline">
+          <button class="sign-in-button" type="button">Sign In</button>
+        </form>
+      </div>
     </div>
 
 
     <div id="carousel" class="carousel">
       <div class="slides">
-        <div class="slide" data-state="active">Slide 1</div>
-        <div class="slide">Slide 2</div>
-        <div class="slide">Slide 3</div>
+
+        <div class="slide" data-state="active">
+          <img class="slideActual" src="img\wynand-van-poortvliet-364366-unsplash.jpg">
+        </div>
+
+        <div class="slide">
+          <img class="slideActual" src="img\wexor-tmg-26886-unsplash.jpg">
+        </div>
+
+        <div class="slide">
+          <img class="slideActual" src="img\gary-bendig-174328-unsplash.jpg">
+        </div>
+
+
       </div>
       <div class="indicators">
         <input class="indicator" name="indicator" data-slide="1" data-state="active" checked type="radio" />
@@ -51,99 +63,198 @@
 
     <div class="row" id="donate-div">
       <div class="col">
-        <img src="img\noun_Penguin_1110100.png" class="donate-div-icon"> </img>
-        <img src="img\noun_Penguin_1110100.png" class="donate-div-icon"> </img>
-        <img src="img\noun_Penguin_1110100.png" class="donate-div-icon"> </img>
+        <img src="img\noun_Penguin_543593.svg" class="donate-div-icon"> </img>
+        <img src="img\noun_Elephant Body_1591847.svg" class="donate-div-icon"> </img>
+        <img src="img\noun_Fish_2642475.svg" class="donate-div-icon"> </img>
 
-        <button class="donate-button">
+        <button data-tippy-content='<strong>Please sign in to give.</strong>' class="donate-button">
           <div> DONATE </div>
         </button>
-        <img src="img\noun_Penguin_1110100.png" class="donate-div-icon"></img>
-        <img src="img\noun_Penguin_1110100.png" class="donate-div-icon"></img>
-        <img src="img\noun_Penguin_1110100.png" class="donate-div-icon"></img>
-
+        <img src="img\noun_Fish_2642475.svg" class="donate-div-icon"></img>
+        <img src="img\noun_Elephant Body_1591847.svg" class="donate-div-icon"></img>
+        <img src="img\noun_Penguin_543593.svg" class="donate-div-icon"></img>
       </div>
     </div>
 
-    <div class="section-header" id="mission"> <h4>OUR MISSION</h4></div>
+
+
+    <div class="section-header" id="mission">
+      <h4>OUR MISSION</h4>
+    </div>
+
+    <div class="row mission-elements1">
+
+      <div class="w3-bar w3-black" id="hideMeOnDesktop">
+        <button class="w3-bar-item w3-button" onclick="openCity('mission-box-1')">Global</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('mission-box-2')">Local</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('mission-box-3')">Driven</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('mission-box-4')">Fiscal</button>
+      </div>
+
+      <div id="mission-box-1" class="w3-container city">
+        <div class="mission-elements-box">
+
+          <div>
+            <h4>Global<br> Change </h4>
+          </div>
+
+          <div class="mission-icon">
+            <img src="img\noun_Global connections_1280783.svg"></img>
+          </div>
+
+          <div>
+            <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach
+              avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin
+              horseradish spinach carrot soko. </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="mission-box-2" class="w3-container city" style="display:none">
+        <div class="mission-elements-box">
+
+          <div>
+            <h4>Local<br> Impact</h4>
+          </div>
+
+          <div class="mission-icon">
+            <img src="img\noun_local_1709298.svg"></img>
+          </div>
+
+          <div>
+            <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach
+              avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin
+              horseradish spinach carrot soko. </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="mission-box-3" class="w3-container city" style="display:none">
+        <div class="mission-elements-box">
+
+          <div>
+            <h4>Community<br> Driven </h4>
+          </div>
+
+          <div class="mission-icon">
+            <img src="img\noun_Community_1289689.svg"></img>
+          </div>
+
+          <div>
+            <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach
+              avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin
+              horseradish spinach carrot soko. </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="mission-box-4" class="w3-container city" style="display:none">
+        <div class="mission-elements-box">
+
+          <div>
+            <h4> Fiscal<br> Planning </h4>
+          </div>
+
+          <div class="mission-icon">
+            <img src="img\noun_financial_1684306.svg"></img>
+          </div>
+
+          <div>
+            <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach
+              avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin
+              horseradish spinach carrot soko. </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
 
     <div class="row mission-elements">
 
-      <div id="mission-box-1" class="col">
+
+      <div id="mission-box-1tabdesk">
         <div class="mission-elements-box">
 
           <div>
-            <h4>Global Change </h4>
+            <h4>Global<br> Change </h4>
           </div>
 
           <div class="mission-icon">
-            <img src="img\noun_habitat_2369108.png" ></img>
+            <img src="img\noun_Global connections_1280783.svg"></img>
           </div>
 
           <div>
-            <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach
-              avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin
-              horseradish spinach carrot soko. </p>
+            <p>Many animals under our care are also part of critical assurance populations to guard against extinction
+              Numerous field research and conservation projects with amphibians, reptiles, birds, mammals and
+              butterflies to study and conserve wild populations. </p>
           </div>
 
         </div>
       </div>
 
-      <div id="mission-box-2" class="col">
+      <div id="mission-box-2tabdesk">
         <div class="mission-elements-box">
 
           <div>
-            <h4>Local Impact</h4>
+            <h4>Local<br> Impact</h4>
           </div>
 
           <div class="mission-icon">
-            <img src="img\noun_local_1709298 (1).png" ></img>
+            <img src="img\noun_local_1709298.svg"></img>
           </div>
 
           <div>
-            <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach
-              avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin
-              horseradish spinach carrot soko. </p>
+            <p>Wildlife conservation is the practice of protecting animal species and their habitats. It is achieved
+              partially through legislation such as the Endangered Species Act, the establishment and protection of
+              public lands, and responsible public practices that conserve wild animal populations. </p>
           </div>
 
         </div>
       </div>
 
-      <div id="mission-box-3" class="col">
+      <div id="mission-box-3tabdesk">
         <div class="mission-elements-box">
 
           <div>
-            <h4>Community Driven </h4>
+            <h4>Community<br> Driven </h4>
           </div>
 
           <div class="mission-icon">
-            <img src="img\noun_Community_1289689.png" ></img>
+            <img src="img\noun_Community_1289689.svg"></img>
           </div>
 
           <div>
-            <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach
-              avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin
-              horseradish spinach carrot soko. </p>
+            <p>Many animals under our care are also part of critical assurance populations to guard against extinction
+              Numerous field research and conservation projects with amphibians, reptiles, birds, mammals and
+              butterflies to study and conserve wild populations.
+            </p>
           </div>
 
         </div>
       </div>
 
-      <div id="mission-box-4" class="col">
+      <div id="mission-box-4tabdesk">
         <div class="mission-elements-box">
 
           <div>
-            <h4> Fiscal Planning </h4>
+            <h4> Fiscal<br> Planning </h4>
           </div>
 
           <div class="mission-icon">
-            <img src="img\noun_financial_1684306.png" ></img>
+            <img src="img\noun_financial_1684306.svg"></img>
           </div>
 
           <div>
-            <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach
-              avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin
-              horseradish spinach carrot soko. </p>
+            <p>We put most dollars in the field. Helps people restore habitat and wildlife populations to our cities,
+              towns, and neighborhoods. In doing
+              so, the Garden for Wildlife program helps wildlife and gives people a daily connection to the natural
+              world. </p>
           </div>
 
         </div>
@@ -151,7 +262,10 @@
 
     </div>
 
-    <div class="section-header" id="success"> <h4>SUCCESS STORIES</h4></div>
+
+    <div class="section-header" id="success">
+      <h4>SUCCESS STORIES</h4>
+    </div>
 
     <div class="row success-stories">
 
@@ -159,19 +273,19 @@
         <div class="success-stories-box">
 
           <div>
-            <h5> Funding Partner - Detroit Hives </h5>
+            <h4> Funding Partner - <br>Detroit Hives </h4>
           </div>
 
-          <div>
-            <video controls class="hivesVid">
+          <div class="hivesVid">
+            <video controls>
               <source
                 src="img\1526707267822_1558635718196_1526762563911_mp4_video_1024x540_1632000_primary_audio_eng_3.mp4"
                 type="video/mp4"> </video>
           </div>
 
           <div>
-            <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed
-              pea.</p>
+            <p>In addition, the North Country National Scenic Trail, a 4,600-mile
+              hiking trail that crosses seven northern states, parallels the river for four miles..</p>
           </div>
 
         </div>
@@ -182,28 +296,31 @@
         <div class="success-stories-box">
 
           <div>
-            <h5>Funding Ecological Preservation in MI </h5>
+            <h4>Funding Ecological Preservation <br>in Michigan </h4>
           </div>
 
           <div>
-            
+
           </div>
 
           <div>
-            <p><br>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed
-              pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter
-              purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama
-              salsify. <br> <br>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed
-              pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter
-              purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama
-              salsify.<br><br> </p>
+            <p><br>The Sturgeon River—a blue ribbon trout stream, and wild and scenic river—is a prime destination in
+              the western U.P. for paddlers, hikers, nature enthusiasts and trout anglers. In 2010, we protected more
+              than five miles along this vital waterway, connecting neighboring lands to form a continuous 30-mile
+              stretch of public land along the river. In addition, the North Country National Scenic Trail, a 4,600-mile
+              hiking trail that crosses seven northern states, parallels the river for four miles.
+              <br> <br>These acres includes a combination of bottomland hardwood swamp, shrub marsh and oak ridges that
+              provide a home for a variety of wildlife, including wood ducks, barred owls, eastern wood-pewees, wood
+              thrushes, American redstarts and scarlet tanagers.<br><br> </p>
           </div>
 
         </div>
       </div>
     </div>
 
-    <div class="section-header" id="mission"> <h4>BLOG UPDATES</h4></div>
+    <div class="section-header" id="mission">
+      <h4>BLOG UPDATES</h4>
+    </div>
 
     <div class="row press-elements">
 
@@ -212,12 +329,13 @@
         <div class="press-elements-box">
 
           <div>
-            <h5>Key Conservation Pilot Project </h5>
+            <h5>Key Conservation <br>Pilot Project </h5>
           </div>
 
           <div>
             <a href="https://www.keyconservation.org/updates/category/Keys%3A%20Pilot%20Project%20Interview%20Series">
-              <h5>Parrots Conservation Bolivia CLB</h5> </a>
+              <h5>Parrots Conservation Bolivia CLB</h5>
+            </a>
           </div>
         </div>
       </div>
@@ -226,12 +344,14 @@
         <div class="press-elements-box">
 
           <div>
-            <h5>Key Conservation Pilot Project </h5>
+            <h5>Key Conservation <br>Pilot Project </h5>
           </div>
 
           <div>
-            <a href="https://www.keyconservation.org/single-post/2019/05/20/Key-Conservation-Pilot-Project-Saiga-Conservation-Alliance">
-              <h5>Saiga Conservation Alliance</h5> </a>
+            <a
+              href="https://www.keyconservation.org/single-post/2019/05/20/Key-Conservation-Pilot-Project-Saiga-Conservation-Alliance">
+              <h5>Saiga Conservation Alliance</h5>
+            </a>
           </div>
         </div>
       </div>
@@ -251,6 +371,19 @@
   <!--//end container//-->
 
   <!-- Optional JavaScript -->
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@4"></script>
+  <script>
+    tippy('.donate-button', {
+      trigger: 'click',
+      arrow: true,
+      arrowType: 'round', // or 'sharp' (default)
+      // animation: 'fade',
+      animateFill: false,
+      animation: 'scale',
+      theme: 'dark',
+    });
+  </script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -261,16 +394,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
-  </body>
+  <script src="js/index.js"></script>
+</body>
 
 </html>
-
-
-
-
-
-
-
-
-
